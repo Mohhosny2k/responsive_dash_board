@@ -7,16 +7,19 @@ class CustomDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Container(
-      decoration:const BoxDecoration(
+    return Container(
+      decoration: const BoxDecoration(
         color: Colors.white,
       ),
- child: Column(
-  children: [
-
-    UserInfoListTile(image: Assets.imagesAvatar3, title: 'Lekan Okeowo', subtitle: 'demo@gmail.com'),
-  ],
- ),
+      child: const Column(
+        children: [
+          UserInfoListTile(
+              image: Assets.imagesAvatar3,
+              title: 'Lekan Okeowo',
+              subtitle: 'demo@gmail.com'),
+              SizedBox(height: 8,),
+        ],
+      ),
     );
   }
 }
