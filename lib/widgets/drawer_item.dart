@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../models/drawer_item_model.dart';
 import '../utils/app_styles.dart';
+import 'active_and_inactive_item.dart';
 
 class DrawerItem extends StatelessWidget {
   const DrawerItem({super.key, required this.drawerItemModel, required this.isActive});
@@ -10,9 +11,7 @@ class DrawerItem extends StatelessWidget {
   final bool isActive;
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: SvgPicture.asset(drawerItemModel.image),
-      title: Text(drawerItemModel.title, style: AppStyles.styleMedium16),
-    );
+    return  
+      isActive ? ActiveDrawerItem(drawerItemModel: drawerItemModel) : InActiveDrawerItem(drawerItemModel: drawerItemModel);
   }
 }
