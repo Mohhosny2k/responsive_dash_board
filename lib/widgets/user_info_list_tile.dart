@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
-import '../utils/app_images.dart';
 import '../utils/app_styles.dart';
 
 class UserInfoListTile extends StatelessWidget {

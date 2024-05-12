@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:responsive_dash_board/utils/app_images.dart';
 import 'package:responsive_dash_board/widgets/active_and_inactive_item.dart';
 import 'package:responsive_dash_board/widgets/user_info_list_tile.dart';
-
 import '../models/drawer_item_model.dart';
-import 'drawer_item.dart';
 import 'drawer_item_list_view.dart';
 
 class CustomDrawer extends StatelessWidget {

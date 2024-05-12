@@ -13,7 +13,7 @@ class DrawerItemListView extends StatefulWidget {
 
 class _DrawerItemListViewState extends State<DrawerItemListView> {
   int activeIndex = 0;
-  final List<DrawerItemModel> items = [
+  final List<DrawerItemModel> items =const [
     DrawerItemModel(title: 'Dashboard', image: Assets.imagesDashboard),
     DrawerItemModel(title: 'My Transaction', image: Assets.imagesMyTransctions),
     DrawerItemModel(title: 'Statistics', image: Assets.imagesStatistics),
@@ -32,7 +32,7 @@ class _DrawerItemListViewState extends State<DrawerItemListView> {
               if (activeIndex != index) {
                 setState(() {
                   activeIndex = index;
-                  print('active index = $activeIndex');
+                //  print('active index = $activeIndex');
                 });
               }
             },
