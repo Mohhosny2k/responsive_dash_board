@@ -16,6 +16,7 @@ class AllExpensess extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
       ),
       child:const Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           AllExpensessHeader(),
           SizedBox(height: 16,),
