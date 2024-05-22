@@ -4,9 +4,16 @@ import 'package:responsive_dash_board/utils/app_images.dart';
 
 import 'all_expensess_item.dart';
 
-class AllExpensessItemsListView extends StatelessWidget {
+class AllExpensessItemsListView extends StatefulWidget {
   const AllExpensessItemsListView({super.key});
-  static const items = [
+
+  @override
+  State<AllExpensessItemsListView> createState() =>
+      _AllExpensessItemsListViewState();
+}
+
+class _AllExpensessItemsListViewState extends State<AllExpensessItemsListView> {
+  final items = const [
     AllExpensessItemModel(
         image: Assets.imagesBalance,
         title: 'Balance',
@@ -23,6 +30,7 @@ class AllExpensessItemsListView extends StatelessWidget {
         date: 'April 2022',
         price: r'$ 20.129'),
   ];
+  int selectedIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -34,13 +42,27 @@ class AllExpensessItemsListView extends StatelessWidget {
         var item = e.value;
         if (index == 1) {
           return Expanded(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 12),
-              child: AllExpensessItem(itemModel: item ,isSelected:true),
+            child: GestureDetector(
+              onTap: () {
+                updateIndex(index);
+              },
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 12),
+                child: AllExpensessItem(
+                    itemModel: item, isSelected: selectedIndex == index),
+              ),
             ),
           );
-        }else {
-           return Expanded(child: AllExpensessItem(itemModel: item,isSelected: false));
+        } else {
+          return Expanded(
+            child: GestureDetector(
+              onTap: () {
+                  updateIndex(index);
+                },
+              child: AllExpensessItem(
+                      itemModel: item, isSelected: selectedIndex == index),
+            ),
+          );
         }
       },
     ).toList());
@@ -56,5 +78,11 @@ class AllExpensessItemsListView extends StatelessWidget {
     //     },
     //   ),
     // );
+  }
+
+  void updateIndex(int index) {
+    setState(() {
+      selectedIndex = index;
+    });
   }
 }
