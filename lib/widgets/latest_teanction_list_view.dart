@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/models/user_info_model.dart';
 import 'package:responsive_dash_board/widgets/user_info_list_tile.dart';
-
 import '../utils/app_images.dart';
 
 class LatestTeansctionListView extends StatelessWidget {
@@ -22,18 +21,25 @@ class LatestTeansctionListView extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 90,
-      child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        itemCount: items.length,
-        itemBuilder: (context, index) {
-          return Padding(
-              padding: const EdgeInsets.only(top: 20),
-              child: IntrinsicWidth(
-                  child: UserInfoListTile(userInfoModel: items[index])));
-        },
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      child: Row(
+        children: items.map((e) => IntrinsicWidth(child: UserInfoListTile(userInfoModel:e))).toList(),
       ),
     );
+
+    // return SizedBox(
+    //   height: 90,
+    //   child: ListView.builder(
+    //     scrollDirection: Axis.horizontal,
+    //     itemCount: items.length,
+    //     itemBuilder: (context, index) {
+    //       return Padding(
+    //           padding: const EdgeInsets.only(top: 20),
+    //           child: IntrinsicWidth(
+    //               child: UserInfoListTile(userInfoModel: items[index])));
+    //     },
+    //   ),
+    // );
   }
 }
