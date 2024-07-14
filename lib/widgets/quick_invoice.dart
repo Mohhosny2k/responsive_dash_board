@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/widgets/custom_background_container.dart';
-import 'package:responsive_dash_board/widgets/latest_teanction_list_view.dart';
+import 'package:responsive_dash_board/widgets/latest_transction.dart';
 
+import 'custom_text_field.dart';
 import 'quick_invoice_header.dart';
 
 class QuickInvoice extends StatelessWidget {
@@ -13,7 +14,11 @@ class QuickInvoice extends StatelessWidget {
       child: Column(
         children: [
           QuickInvoiceHeader(),
-          LatestTeansctionListView()
+          LatestTeansction(),
+          Divider(
+            height: 48,
+          ),
+          CustomTextField(),
         ],
       ),
     );
