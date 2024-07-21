@@ -5,6 +5,8 @@ import 'package:responsive_dash_board/widgets/all_expensess.dart';
 import 'package:responsive_dash_board/widgets/custom_drawer.dart';
 import 'package:responsive_dash_board/widgets/quick_invoice.dart';
 
+import 'all_expensess_and_quick_invoice.dart';
+
 class DashboradDeskTopLayout extends StatelessWidget {
   const DashboradDeskTopLayout({super.key});
 
@@ -18,20 +20,7 @@ class DashboradDeskTopLayout extends StatelessWidget {
         ),
         Expanded(
             flex: 2,
-            child: SingleChildScrollView(
-              child: Column(
-                children: [
-                   SizedBox(
-                    height: 40,
-                  ),
-                  AllExpensess(),
-                  SizedBox(
-                    height: 24,
-                  ),
-                  QuickInvoice(),
-                ],
-              ),
-            )),
+            child: AllExpensessAndQuickInvoiceSection()),
         SizedBox(
           width: 32,
         ),
@@ -39,3 +28,4 @@ class DashboradDeskTopLayout extends StatelessWidget {
     );
   }
 }
+
