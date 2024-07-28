@@ -6,6 +6,7 @@ import 'package:responsive_dash_board/widgets/custom_dot.dart';
 import 'package:responsive_dash_board/widgets/custom_drawer.dart';
 import 'package:responsive_dash_board/widgets/my_card.dart';
 import 'package:responsive_dash_board/widgets/my_cards_page_view.dart';
+import 'package:responsive_dash_board/widgets/my_cards_section.dart';
 import 'package:responsive_dash_board/widgets/quick_invoice.dart';
 
 import 'all_expensess_and_quick_invoice.dart';
@@ -25,9 +26,9 @@ class DashboradDeskTopLayout extends StatelessWidget {
         SizedBox(
           width: 24,
         ),
-        Expanded(child: MyCardsPageView()),
-
-      //  CustomDotIndicator(),
+        // Expanded(child: MyCardsPageView()),
+       Expanded(child: MyCardsSection()),
+        //  CustomDotIndicator(),
       ],
     );
   }
