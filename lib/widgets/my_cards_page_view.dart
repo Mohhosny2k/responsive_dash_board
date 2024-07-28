@@ -21,9 +21,9 @@ class MyCardsPageView extends StatelessWidget {
     return ExpandablePageView(
         controller: pageController,
         scrollDirection: Axis.horizontal,
-        onPageChanged: (value) {
-          print('vvvvvv$value');
-        },
+        // onPageChanged: (value) {
+        //   print('vvvvvv$value');
+        // },
         children: List.generate(
           3,
           (index) => const MyCard(),
