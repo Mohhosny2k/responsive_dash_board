@@ -4,9 +4,10 @@ import 'package:flutter/material.dart';
 import 'my_card.dart';
 
 class MyCardsPageView extends StatelessWidget {
-  const MyCardsPageView({super.key});
+  const MyCardsPageView({super.key, required this.pageController});
   // List<double> childerenHeight = [];
   // int currentPage = 0;
+  final PageController pageController;
   @override
   Widget build(BuildContext context) {
     // return SizedBox(
@@ -18,7 +19,11 @@ class MyCardsPageView extends StatelessWidget {
     //   ),
     // );
     return ExpandablePageView(
+        controller: pageController,
         scrollDirection: Axis.horizontal,
+        onPageChanged: (value) {
+          print('vvvvvv$value');
+        },
         children: List.generate(
           3,
           (index) => const MyCard(),
