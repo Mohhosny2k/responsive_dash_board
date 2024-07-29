@@ -25,6 +25,9 @@ class TransctionHistory extends StatelessWidget {
             fontWeight: FontWeight.w500,
           ),
         ),
+         SizedBox(
+          height: 16,
+        ),
         TransctionHistoryListView(),
       ],
     );
