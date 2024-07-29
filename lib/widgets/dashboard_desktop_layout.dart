@@ -8,6 +8,7 @@ import 'package:responsive_dash_board/widgets/my_card.dart';
 import 'package:responsive_dash_board/widgets/my_cards_page_view.dart';
 import 'package:responsive_dash_board/widgets/my_cards_section.dart';
 import 'package:responsive_dash_board/widgets/quick_invoice.dart';
+import 'package:responsive_dash_board/widgets/transction_history.dart';
 
 import 'all_expensess_and_quick_invoice.dart';
 
@@ -27,7 +28,12 @@ class DashboradDeskTopLayout extends StatelessWidget {
           width: 24,
         ),
         // Expanded(child: MyCardsPageView()),
-       Expanded(child: MyCardsSection()),
+       Expanded(child: Column(
+         children: [
+           MyCardsSection(),
+           TransctionHistory(),
+         ],
+       )),
         //  CustomDotIndicator(),
       ],
     );
