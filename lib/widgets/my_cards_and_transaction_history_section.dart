@@ -20,7 +20,7 @@ class MyCardsAndTransactionHistorySection extends StatelessWidget {
         ),
         TransctionHistory(),
 
-        IncomeSection(),
+       
       ],
     ));
   }
