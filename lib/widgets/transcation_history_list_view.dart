@@ -24,12 +24,15 @@ class TransctionHistoryListView extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      itemBuilder: (context, index) {
-        return TransctionItem(transctionModel: items[index]);
-      },
-      itemCount: items.length,
-      shrinkWrap: true,
+    // return ListView.builder(
+    //   itemBuilder: (context, index) {
+    //     return TransctionItem(transctionModel: items[index]);
+    //   },
+    //   itemCount: items.length,
+    //   shrinkWrap: true,
+    // );
+    return Column(
+      children: items.map((e) => TransctionItem(transctionModel: e)).toList(),
     );
   }
 }

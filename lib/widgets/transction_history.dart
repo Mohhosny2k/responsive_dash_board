@@ -18,12 +18,7 @@ class TransctionHistory extends StatelessWidget {
         ),
         Text(
           '13 April 2022',
-          style: TextStyle(
-            color: Color(0xFFAAAAAA),
-            fontSize: 16,
-            fontFamily: 'Montserrat',
-            fontWeight: FontWeight.w500,
-          ),
+          style:AppStyles.styleMedium16
         ),
          SizedBox(
           height: 16,
