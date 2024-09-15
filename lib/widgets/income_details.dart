@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/models/item_details_model.dart';
 
@@ -23,7 +25,9 @@ class IncomeDetails extends StatelessWidget {
     //   itemBuilder: (BuildContext context, int index) {
     //   return ItemDetails(itemDetailsModel: items[index]);
     // });
+    log(MediaQuery.of(context).size.width.toString());
      return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: items.map((e) => ItemDetails(itemDetailsModel: e)).toList(),
     );
   }
