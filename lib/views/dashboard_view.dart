@@ -11,11 +11,16 @@ class DashBoradView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: MediaQuery.sizeOf(context).width < 800 ? AppBar(
+        leading: const Icon(Icons.menu),
+        elevation: 0,
+        backgroundColor: const Color(0xFFFAFAFA),
+      ) : null,
       backgroundColor: const Color(0xFFF7F9FA),
       body: AdaptiveLayout(
-          mobileLayout: (context) =>const  DashBoardMobileLayout(),
-          tabletLayout: (context) =>const DashBoardTabletLayout(),
-          desktopLayout: (context) =>const DashboradDeskTopLayout()),
+          mobileLayout: (context) => const DashBoardMobileLayout(),
+          tabletLayout: (context) => const DashBoardTabletLayout(),
+          desktopLayout: (context) => const DashboradDeskTopLayout()),
     );
   }
 }
