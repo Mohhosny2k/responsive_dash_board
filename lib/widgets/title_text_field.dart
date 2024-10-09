@@ -11,7 +11,7 @@ final String title, hint;
     return  Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('Customer name', style: AppStyles.styleMedium16),
+        Text('Customer name', style: AppStyles.styleMedium16(context)),
      const   SizedBox(
           height: 12,
         ),

@@ -21,9 +21,9 @@ class ItemDetails extends StatelessWidget {
                   shape: const OvalBorder(), color: itemDetailsModel.color),
             ),
            const SizedBox(width: 12,),
-            Text(itemDetailsModel.title, style: AppStyles.styleRegular16),
+            Text(itemDetailsModel.title, style: AppStyles.styleRegular16(context)),
             const SizedBox(width: 24,),
-            Text(itemDetailsModel.value, style: AppStyles.styleMedium16),
+            Text(itemDetailsModel.value, style: AppStyles.styleMedium16(context)),
         
           ],
         ),

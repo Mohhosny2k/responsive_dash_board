@@ -21,7 +21,7 @@ class RangeOptions extends StatelessWidget {
       child: Row(
         //mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-           Text('Monthly', style: AppStyles.styleMedium16),
+           Text('Monthly', style: AppStyles.styleMedium16(context)),
           const SizedBox(
             width: 18,
           ),
