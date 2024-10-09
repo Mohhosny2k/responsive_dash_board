@@ -1,8 +1,11 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_dash_board/views/dashboard_view.dart';
-
+import 'package:device_preview/device_preview.dart';
 void main() {
-  runApp(const ReesponsiveDashBoard());
+  runApp(DevicePreview(
+     enabled: !kReleaseMode,
+    builder: (context) =>  const ReesponsiveDashBoard()));
 }
 
 class ReesponsiveDashBoard extends StatelessWidget {
@@ -12,6 +15,9 @@ class ReesponsiveDashBoard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      useInheritedMediaQuery: true,
+      locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
       title: 'Responsive Dash Board',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
