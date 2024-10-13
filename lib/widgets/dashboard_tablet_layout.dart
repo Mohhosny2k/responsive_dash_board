@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/widgets/all_expensess_and_quick_invoice.dart';
-import 'package:responsive_dash_board/widgets/custom_drawer.dart';
-import 'package:responsive_dash_board/widgets/income_section.dart';
-import 'package:responsive_dash_board/widgets/my_cards_and_transaction_history_section.dart';
+import 'all_expensess_and_quick_invoice.dart';
+import 'custom_drawer.dart';
+import 'income_section.dart';
+import 'my_cards_and_transaction_history_section.dart';
 
 import 'dashboard_mobile_layout.dart';
 

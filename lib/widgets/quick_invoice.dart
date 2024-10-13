@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/widgets/custom_background_container.dart';
-import 'package:responsive_dash_board/widgets/latest_transction.dart';
+import 'custom_background_container.dart';
+import 'latest_transction.dart';
 
 import 'custom_text_field.dart';
 import 'quick_invoice_form.dart';

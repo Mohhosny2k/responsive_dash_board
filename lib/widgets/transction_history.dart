@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/utils/app_styles.dart';
+import '../utils/app_styles.dart';
 
 import 'tranaction_history_header.dart';
 import 'transcation_history_list_view.dart';

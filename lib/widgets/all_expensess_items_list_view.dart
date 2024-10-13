@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/models/all_expensess_item_model.dart';
-import 'package:responsive_dash_board/utils/app_images.dart';
+import '../models/all_expensess_item_model.dart';
+import '../utils/app_images.dart';
 
 import 'all_expensess_item.dart';
 

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/models/transction_model.dart';
-import 'package:responsive_dash_board/widgets/transction_item.dart';
+import '../models/transction_model.dart';
+import 'transction_item.dart';
 
 class TransctionHistoryListView extends StatelessWidget {
   const TransctionHistoryListView({super.key});

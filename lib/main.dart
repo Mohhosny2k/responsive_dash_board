@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/views/dashboard_view.dart';
+import 'views/dashboard_view.dart';
 import 'package:device_preview/device_preview.dart';
 void main() {
   runApp(DevicePreview(
@@ -21,6 +21,7 @@ class ReesponsiveDashBoard extends StatelessWidget {
       title: 'Responsive Dash Board',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        // brightness: Brightness.dark,
         //colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),

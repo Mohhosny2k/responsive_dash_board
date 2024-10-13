@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/widgets/custom_background_container.dart';
-import 'package:responsive_dash_board/widgets/income_section.dart';
+import 'custom_background_container.dart';
+import 'income_section.dart';
 
 import 'my_cards_section.dart';
 import 'transction_history.dart';

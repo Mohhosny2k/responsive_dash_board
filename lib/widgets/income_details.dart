@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/models/item_details_model.dart';
+import '../models/item_details_model.dart';
 
 import '../utils/app_styles.dart';
 import 'item_details.dart';
