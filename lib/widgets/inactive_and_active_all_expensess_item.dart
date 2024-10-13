@@ -81,7 +81,7 @@ class ActiveAllExpensessItem extends StatelessWidget {
       decoration: ShapeDecoration(
           color:const Color(0xFF4DB7F2),
           shape: RoundedRectangleBorder(
-           side: const BorderSide(width: 1, color: Color(0xFFF1F1F1)),
+           side: const BorderSide(width: 1, color: Color(0xFF4DB7F2)),
             borderRadius: BorderRadius.circular(12),
           )),
       child: Column(
